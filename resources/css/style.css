@@ -1,0 +1,42 @@
+/* Header */
+
+header {
+  height: 64px;
+  width: 100%;
+  border: red solid 1px;
+  align-items: center;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  border: orange solid 1px;
+  height: 64px;
+}
+
+header .logo {
+  flex-grow: 1;
+  font-size: 32px;
+}
+
+.logo_pic img {
+  padding-left: 24px;
+}
+
+header nav ul {
+  display: flex;
+  border: blue solid 1px;
+  vertical-align: bottom;
+}
+
+nav li {
+  padding-left: 16px;
+}
+
+nav li:last-child {
+  padding-right: 24px;
+}
+
+header .mobile {
+  display: none;
+}
