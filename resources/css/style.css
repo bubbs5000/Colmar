@@ -53,7 +53,7 @@ header .mobile {
   display: none;
 }
 
-/* First Section */
+/* First Section (learn) */
 
 .learn {
   width: 100%;
@@ -96,4 +96,50 @@ header .mobile {
   text-align: center;
   max-width: 65%;
   padding: 8px 0 8px 0;
+}
+
+/* Second Section (Practice) */
+
+.practice {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.practice_left {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.practice_left img {
+  border: orange solid 4px;
+}
+
+.practice_column {
+  width: 40%;
+  border: red solid 1px;
+}
+
+.practice_frame {
+  display: flex;
+}
+
+.practice_frame img {
+  height: auto;
+  border: purple solid 2px;
+}
+
+.practice_text {
+  width: 65%;
+  border: pink dotted 3px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.practice_img {
+  width: 35%;
+  display: inline;
+  border: green dotted 2px;
+  margin: 16px;
 }
