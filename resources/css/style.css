@@ -115,9 +115,18 @@ header .mobile {
   border: orange solid 4px;
 }
 
+.practice_left h1 {
+  padding: 32px 0 24px 0;
+}
+
+.practice_left p {
+  padding: 32px 0 32px 0;
+}
+
 .practice_column {
   width: 40%;
   border: red solid 1px;
+  margin: 32px 0 32px 0;
 }
 
 .practice_frame {
@@ -133,8 +142,9 @@ header .mobile {
   width: 65%;
   border: pink dotted 3px;
   display: flex;
-  flex-direction: column;
   align-content: center;
+  flex-wrap: wrap;
+  font-size: 24px;
 }
 
 .practice_img {
@@ -142,4 +152,51 @@ header .mobile {
   display: inline;
   border: green dotted 2px;
   margin: 16px;
+}
+
+/* Third Section (classes) */
+
+#courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: pink solid 2px;
+  background-color: grey;.
+  width: 100%;
+  padding: 0 72px 0 40px;
+}
+
+.classes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#courses span {
+  padding-top: 32px;
+  font-size: 32px;
+  border: red solid 1px;
+}
+
+.class_box {
+  margin: 32px 0 32px 32px;
+  border: red solid 1px;
+  background-color: white;
+  max-width: 31%;
+}
+
+.class_img img {
+  height: auto;
+  width: 100%;
+  border: green solid 1px;
+}
+
+.class_text  {
+  margin: 16px 16px 24px 16px;
+  border: blue solid 1px;
+}
+
+.class_text p {
+  padding: 8px 0 8px 0;
+  border: blue solid 1px;
 }
