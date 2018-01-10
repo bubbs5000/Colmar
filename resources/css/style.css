@@ -2,19 +2,21 @@ img {
   max-width: 100%;
 }
 
+#background {
+  background-color: #bdab8f;
+}
+
 /* Header */
 
 header {
   height: 64px;
   width: 100%;
-  border: red solid 1px;
   align-items: center;
 }
 
 header .content {
   display: flex;
   align-items: center;
-  border: orange solid 1px;
   height: 64px;
 }
 
@@ -24,11 +26,15 @@ header .logo {
 }
 
 header .logo p {
-  color: black;
+  color: #424e78;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 }
 
 header .logo span {
-  color: blue;
+  color: #bdab8f;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 }
 
 .logo_pic img {
@@ -37,12 +43,14 @@ header .logo span {
 
 header nav ul {
   display: flex;
-  border: blue solid 1px;
   vertical-align: bottom;
 }
 
 nav li {
   padding-left: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
 }
 
 nav li:last-child {
@@ -53,14 +61,18 @@ header .mobile {
   display: none;
 }
 
+.desktop a:hover {
+  color: #bdab8f;
+  font-weight: bold;
+}
+
 /* First Section (learn) */
 
 .learn {
   width: 100%;
-  background-color: lightgrey;
+  background-color: #bbbcbf;
   display: flex;
   align-items: center;
-  border: orange solid 1px;
   font-family: helvetica;
   color: #303030;
   line-height: 1.3;
@@ -98,59 +110,91 @@ header .mobile {
   padding: 8px 0 8px 0;
 }
 
-/* Second Section (Practice) */
+.learn_button:hover {
+  background-color: #bdab8f;
+}
 
-.practice {
+/* Second Section (Practice) and also the fourth (Thesis) section
+shares many of these classes */
+
+.container {
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.practice_left {
-  width: 60%;
+.container_left {
+  max-width: 60%;
   margin: 32px 24px;
+  color: #303030;
 }
 
-.practice_left img {
-  border: orange solid 4px;
-}
-
-.practice_left h1 {
+.container_left h1 {
   padding: 32px 0 24px 0;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 52px;
+  font-weight: bold;
 }
 
-.practice_left p {
-  padding: 32px 0 32px 0;
-}
-
-.practice_column {
-  width: 40%;
-  border: red solid 1px;
-  margin: 32px 0 32px 0;
-}
-
-.practice_frame {
-  display: flex;
-}
-
-.practice_frame img {
-  height: auto;
-  border: purple solid 2px;
-}
-
-.practice_text {
-  width: 65%;
-  border: pink dotted 3px;
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
+.container_left h3 {
+  font-family: 'Helvetica', sans-serif;
+  font-style: italic;
   font-size: 24px;
 }
 
-.practice_img {
+.container_left p {
+  padding: 32px 0 32px 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.container_column {
+  width: 40%;
+  margin: 32px 0 32px 0;
+  border-left: #bbbcbf solid 1px;
+  }
+
+.container_frame {
+  display: flex;
+  border-bottom: #bbbcbf solid 1px;
+}
+
+.container_frame img {
+  height: auto;
+}
+
+.container_text {
+  width: 65%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container_text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.container_text h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.container_text span {
+  font-size: 20px;
+  color: #424e78;
+  font-weight: bolder;
+}
+
+#first_frames span:hover{
+  color: #303030;
+}
+
+.container_img {
   width: 35%;
   display: inline;
-  border: green dotted 2px;
   margin: 16px;
 }
 
@@ -160,10 +204,10 @@ header .mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: pink solid 2px;
-  background-color: grey;.
+  background-color: #bbbcbf;
   width: 100%;
   padding: 0 72px 0 40px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .classes {
@@ -174,13 +218,14 @@ header .mobile {
 
 #courses span {
   padding-top: 32px;
-  font-size: 32px;
-  border: red solid 1px;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Helvetica', sans-serif;
+  color: #303030;
 }
 
 .class_box {
   margin: 32px 0 32px 32px;
-  border: red solid 1px;
   background-color: white;
   max-width: 31%;
 }
@@ -188,15 +233,101 @@ header .mobile {
 .class_img img {
   height: auto;
   width: 100%;
-  border: green solid 1px;
 }
 
 .class_text  {
   margin: 16px 16px 24px 16px;
-  border: blue solid 1px;
+  line-height: 1.5;
+}
+
+.class_text h1 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .class_text p {
   padding: 8px 0 8px 0;
-  border: blue solid 1px;
+}
+
+.class_text h2 {
+  font-size: 16px;
+}
+
+
+/* Fourth section (Thesis)*/
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 72px 0 40px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.thesis h1 {
+  padding-top: 32px;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Helvetica', sans-serif;
+  color: #303030;
+}
+
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+.thesis h3 {
+  padding: 24px 0 8px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.thesis h4 {
+  padding-bottom: 32px;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+#thesis_column {
+  border: none;
+  align-self: flex-start;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  height: 64px;
+  width: 100%;
+  align-items: flex-start;
+  border-top: grey solid 1px;
+}
+
+footer p {
+  flex-grow: 1;
+  padding: 16px 0 0 24px;
+  color: #303030;
+}
+
+.terms {
+  padding-top: 16px;
+  padding-right: 24px;
+}
+
+.terms a {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  padding-left: 8px;
+  color: #303030;
+}
+
+.terms a:hover {
+  font-weight: bold;
+  color: #bdab8f;
 }

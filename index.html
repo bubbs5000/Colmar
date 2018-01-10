@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>Colmar Academy</title>
   </head>
   <body>
@@ -49,8 +50,8 @@
       </div>
     </div>
 <!-- Second Section -->
-    <div class="practice">
-      <div class="practice_left">
+    <div class="container">
+      <div class="container_left">
         <img src="./resources/images/information-main.jpg" alt="Reading a Book"/>
         <h1>It doesn't hurt to keep practicing</h1>
         <h3>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
@@ -58,34 +59,35 @@
           Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h3>
         <p> Emanuel, Sr Strategist at Hiring.com</p>
       </div>
-      <div class="practice_column">
-        <div class="practice_frame">
-          <div class="practice_img">
+      <div class="container_column">
+        <div class="container_frame">
+          <div class="container_img">
             <img src="./resources/images/information-orientation.jpg" alt="Walking to class"/>
           </div>
-          <div class="practice_text">
+          <div id="first_frames" class="container_text">
             <h3>Orientation date</h3>
             <h4>Tue 10/11 & Wed 10/12: 8am-3pm</h4>
             <span>Read more</span>
           </div>
         </div>
-        <div class="practice_frame">
-          <div class="practice_img">
+        <div class="container_frame">
+          <div class="container_img">
             <img src="./resources/images/information-campus.jpg" alt="Walking to class"/>
           </div>
-          <div class="practice_text">
-            <h3>Orientation date</h3>
-            <h4>Tue 10/11 & Wed 10/12: 8am-3pm</h4>
+          <div id="first_frames" class="container_text">
+            <h3>Our campus</h3>
+            <h4>Find which campus is close to you</h4>
             <span>Read more</span>
           </div>
         </div>
-        <div class="practice_frame">
-          <div class="practice_img">
+        <div id="background" class="container_frame">
+          <div class="container_img">
             <img src="./resources/images/information-guest-lecture.jpg" alt="Walking to class"/>
           </div>
-          <div class="practice_text">
-            <h3>Orientation date</h3>
-            <h4>Tue 10/11 & Wed 10/12: 8am-3pm</h4>
+          <div id="first_frames" class="container_text">
+            <h3>Our guest lecture</h3>
+            <h4>Join keynote with Oliver Sack aoubt music
+            in medical treatment</h4>
             <span>Read more</span>
           </div>
         </div>
@@ -167,49 +169,49 @@
 <!--Fourth Section (Thesis)-->
     <div class="thesis">
       <h1>Thesis exhibit</h1>
-      <div class="thesis_container">
-        <div class="thesis_left">
-          <video id="video" src="./resources/videos/thesis.mp4" controls>
-                    Sorry, video cannot be played.
-          </video>
+      <div class="container">
+        <div class="container_left">
+            <video src="./resources/videos/thesis.mp4" autoplay="yes" loop="yes">
+              Sorry, video could not be played
+            </video>
           <h3>Reimagine urban</h3>
           <h4>"Curabitur vitae libero in ipsum porttitor consequat. Aliaquam
             et commodo lectus, nec consequat neque. Sed non accumsan urna.
             Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
             dolor consequat, tristique ligula."
         </div>
-        <div class="thesis_column">
-          <div class="thesis_frame">
-            <div class="thesis_img">
-              <img src="./resources/images/thesis-fisma.jpg" alt="Work Space"/>
-            </div>
-            <div class="thesis_text">
-              <h3>Fisma: Design and <br>
-              Prototype</h3>
-              <h4>Designer showcase of new<br>
-              prototype product</h4>
-            </div>
+      <div id="thesis_column" class="container_column">
+        <div id="background" class="container_frame">
+          <div class="container_img">
+            <img src="./resources/images/thesis-fisma.jpg" alt="Work Space"/>
           </div>
-          <div class="thesis_frame">
-            <div class="thesis_img">
-              <img src="./resources/images/thesis-now-and-then.jpg" alt="City Scape"/>
-            </div>
-            <div class="thesis_text">
-              <h3>Now and then</h3>
-              <h4>Research study about New York</h4>
-            </div>
+          <div class="container_text">
+            <h3>Fisma: Design and <br>
+            Prototype</h3>
+            <h4>Designer showcase of new<br>
+            prototype product</h4>
+          </div>
+        </div>
+        <div class="container_frame">
+          <div class="container_img">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="City Scape"/>
+          </div>
+          <div class="container_text">
+            <h3>Now and then</h3>
+            <h4>Research study about New York</h4>
           </div>
         </div>
       </div>
     </div>
+  </div>
 <!-- Footer -->
-    <footer>
-      <p>&copy; 2016 Colmar Academy. All rights reserved</p>
-        <div class="terms">
-          <a href="#">Terms</a>
-          <a href="#">Privacy</a>
-        </div>
-    </footer>
+  <footer>
+    <p>&copy; 2016 Colmar Academy. All rights reserved</p>
+      <div class="terms">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+  </footer>
 
   </body>
 </html>
